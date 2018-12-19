@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #btnNo{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+ <p> Do you love me </p>
+<br/>
+<button type="button" id="btnYes" onclick="yes()"> Yes </button>
+<button type="button" id="btnNo" onmouseover="no();"> No </button>
+<script>
+    function yes(){
+        alert ("No. I don't");
+
+    }
+    function no() {
+        var btnNo = document.getElementById('btnNo') ;
+        var left = Math.floor(Math.random() * window.innerHeight);
+        var right = Math.floor(Math.random() * window.innerWidth);
+        btnNo.style.left  = left + "px";
+        btnNo.style.top = right + "px";
+    }
+
+</script>
+</body>
+</html>
